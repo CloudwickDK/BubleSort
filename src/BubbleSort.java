@@ -22,18 +22,17 @@ public class BubbleSort {
 		long ms = ems - sms;
 		
 		System.out.println("Time: " + ms + " miliseconds");
-		
-		 
-	}
+			 
+	}//main
 	
 
 	public static int[] bubbleSort(int[] intArray){
         
-        int tmp = 0;
-        long ops = 0;
+        int tmp = 0; //tmp array element
+        long ops = 0;// num of operations
         
         for(int i=intArray.length; i > 0; i--){ //int i=0; i < integerArray.length; i++)
-                for(int j=(intArray.length-i) ; j > 0 ; j--){ //int j=1; j < (integerArray.length-i); j--)
+                for(int j=(intArray.length-i) ; j > 0 ; j--){ //int j=1; j < (integerArray.length-i); j++)
                      
                 	ops++;
                 	if(intArray[j-1] > intArray[j]){
